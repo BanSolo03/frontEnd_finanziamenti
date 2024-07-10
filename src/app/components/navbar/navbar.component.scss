@@ -1,0 +1,29 @@
+.navbar {
+    border: 2px dashed black;
+    border-radius: 10px;
+
+    .nav-item {
+        border-radius: 10px;
+        transition: background-color 0.2s ease;
+
+        &.active {
+            background-color: black;
+
+            .nav-link {
+                color: white;
+            }
+        }
+
+        &.unactive {
+            background-color: transparent;
+
+            .nav-link {
+                color: black;
+            }
+        }
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}

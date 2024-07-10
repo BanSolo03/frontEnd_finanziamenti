@@ -1,0 +1,46 @@
+<nav class="navbar navbar-expand mt-2 p-0">
+  <div class="container-fluid m-0 p-0">
+    <ul class="navbar-nav mx-auto">
+      <li class="nav-item" [ngClass]="{ active: activeLink === 'API 1' }">
+        <span
+          class="nav-link"
+          (click)="activateLink('API 1')"
+          routerLink="/api1"
+          >API 1</span
+        >
+      </li>
+      <li class="nav-item" [ngClass]="{ active: activeLink === 'API 2' }">
+        <span
+          class="nav-link"
+          (click)="activateLink('API 2')"
+          routerLink="/api2"
+          >API 2</span
+        >
+      </li>
+      <li class="nav-item" [ngClass]="{ active: activeLink === 'API 3' }">
+        <span
+          class="nav-link"
+          (click)="activateLink('API 3')"
+          routerLink="/api3"
+          >API 3</span
+        >
+      </li>
+      <li class="nav-item" [ngClass]="{ active: activeLink === 'API 4' }">
+        <span
+          class="nav-link"
+          (click)="activateLink('API 4')"
+          routerLink="/api4"
+          >API 4</span
+        >
+      </li>
+      <li class="nav-item" [ngClass]="{ active: activeLink === 'API 5' }">
+        <span
+          class="nav-link"
+          (click)="activateLink('API 5')"
+          routerLink="/api5"
+          >API 5</span
+        >
+      </li>
+    </ul>
+  </div>
+</nav>
